@@ -10,35 +10,12 @@ webpackJsonp([1],[
 /* 8 */,
 /* 9 */,
 /* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-function injectStyle (ssrContext) {
-  __webpack_require__(52)
-}
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(21),
-  /* template */
-  __webpack_require__(61),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  "data-v-25118d18",
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getters__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mutations__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getters__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mutations__ = __webpack_require__(76);
 
 
 
@@ -55,18 +32,21 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_Hello__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_Hello__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_Hello___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__views_Hello__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Instalation__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Instalation__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_Instalation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__views_Instalation__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Docs__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Docs__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__views_Docs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__views_Docs__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Customize__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__views_Customize___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__views_Customize__);
+
 
 
 
@@ -79,19 +59,29 @@ var routes = [{
   path: '/hello',
   name: 'hello',
   title: 'Hello',
+  subtitle: 'Vue route timeline',
   icon: 'home',
   component: __WEBPACK_IMPORTED_MODULE_2__views_Hello___default.a
 }, {
   path: '/instalation',
   name: 'instalation',
   title: 'Get started',
-  icon: 'publish',
+  subtitle: 'Lets do this',
+  icon: 'map-signs',
   component: __WEBPACK_IMPORTED_MODULE_3__views_Instalation___default.a
+}, {
+  path: '/customize',
+  name: 'customize',
+  title: 'Customize',
+  subtitle: 'Lets change this',
+  icon: 'pencil',
+  component: __WEBPACK_IMPORTED_MODULE_5__views_Customize___default.a
 }, {
   path: '/docs',
   name: 'docs',
   title: 'Documentation',
-  icon: 'rowing',
+  subtitle: 'Check it out',
+  icon: 'code',
   component: __WEBPACK_IMPORTED_MODULE_4__views_Docs___default.a
 }, {
   path: '*',
@@ -103,12 +93,12 @@ var routes = [{
 }));
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(71);
 
 
 
@@ -121,17 +111,17 @@ var debug = "production" !== 'production';
 }));
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 function injectStyle (ssrContext) {
-  __webpack_require__(54)
+  __webpack_require__(55)
 }
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(18),
+  __webpack_require__(17),
   /* template */
-  __webpack_require__(63),
+  __webpack_require__(67),
   /* styles */
   injectStyle,
   /* scopeId */
@@ -144,13 +134,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 15 */,
-/* 16 */
+/* 14 */,
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__timeline_plugin__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__timeline_plugin__ = __webpack_require__(77);
 
 
 
@@ -161,19 +151,19 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuetify__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuetify__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vuetify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__App___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__App__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__store__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src__ = __webpack_require__(15);
 
 
 
@@ -195,15 +185,13 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({ // eslint-disable-lin
 });
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__views_Hello__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__views_Hello___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__views_Hello__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Navbar__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Navbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Navbar__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Navbar__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Navbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Navbar__);
 //
 //
 //
@@ -222,7 +210,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
+//
+//
+//
+//
 
 
 
@@ -235,13 +226,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   components: {
-    Navbar: __WEBPACK_IMPORTED_MODULE_1__components_Navbar___default.a,
-    Hello: __WEBPACK_IMPORTED_MODULE_0__views_Hello___default.a
+    Navbar: __WEBPACK_IMPORTED_MODULE_0__components_Navbar___default.a
   }
 });
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -249,7 +239,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys__);
 
-//
 //
 //
 //
@@ -290,11 +279,108 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'customize',
+  mounted: function mounted() {
+    this.$routeTimeline.set('Customize', 'Lets change this');
+  }
+});
+
+/***/ }),
 /* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -315,6 +401,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
 //
 //
 //
@@ -439,7 +527,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'instalation',
   mounted: function mounted() {
-    this.$routeTimeline.set('Instalation', 'We checked out how to install, cool!');
+    this.$routeTimeline.set('Get started', 'We checked out how to install, cool!');
   }
 });
 
@@ -524,77 +612,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 55 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(19),
-  /* template */
-  __webpack_require__(60),
-  /* styles */
-  null,
-  /* scopeId */
-  null,
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-function injectStyle (ssrContext) {
-  __webpack_require__(53)
-}
 var Component = __webpack_require__(0)(
   /* script */
-  __webpack_require__(20),
-  /* template */
-  __webpack_require__(62),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  "data-v-44abe1ee",
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-function injectStyle (ssrContext) {
-  __webpack_require__(51)
-}
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(22),
-  /* template */
-  __webpack_require__(59),
-  /* styles */
-  injectStyle,
-  /* scopeId */
-  "data-v-0c7628c6",
-  /* moduleIdentifier (server only) */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Component = __webpack_require__(0)(
-  /* script */
-  __webpack_require__(23),
+  __webpack_require__(18),
   /* template */
   __webpack_require__(64),
   /* styles */
@@ -609,7 +637,119 @@ module.exports = Component.exports
 
 
 /***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+function injectStyle (ssrContext) {
+  __webpack_require__(52)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(19),
+  /* template */
+  __webpack_require__(63),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-17f61136",
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+function injectStyle (ssrContext) {
+  __webpack_require__(54)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(20),
+  /* template */
+  __webpack_require__(66),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-44abe1ee",
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
 /* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+function injectStyle (ssrContext) {
+  __webpack_require__(53)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(21),
+  /* template */
+  __webpack_require__(65),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-25118d18",
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+function injectStyle (ssrContext) {
+  __webpack_require__(51)
+}
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(22),
+  /* template */
+  __webpack_require__(62),
+  /* styles */
+  injectStyle,
+  /* scopeId */
+  "data-v-0c7628c6",
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(23),
+  /* template */
+  __webpack_require__(68),
+  /* styles */
+  null,
+  /* scopeId */
+  null,
+  /* moduleIdentifier (server only) */
+  null
+)
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 62 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -667,15 +807,62 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 60 */
+/* 63 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('nav', [_c('br'), _vm._v(" "), _c('v-list', {
+  return _c('div', {
+    staticClass: "container"
+  }, [_c('h2', [_vm._v("Customize")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('p', [_vm._v("Just remember, i used vuetify. But you can map it to whatever you like.")]), _vm._v(" "), _c('h4', [_vm._v("The code")]), _vm._v(" "), _c('p', [_vm._v("I added all the items of the timeline in a slot you can use.")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h4', [_vm._v("Thats the list")]), _vm._v(" "), _c('p', [_vm._v("Ok cool, thats a list. Now add it in a card")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h4', [_vm._v("The result")]), _vm._v(" "), _c('p', [_vm._v("As on the fontpage, awesome!")]), _vm._v(" "), _c('v-card', [_c('v-toolbar', {
+    staticClass: "cyan",
     attrs: {
-      "dense": ""
+      "dark": ""
     }
-  }, [_c('v-subheader', [_c('h4', {
+  }, [_c('v-toolbar-title', [_vm._v("Timeline")])], 1), _vm._v(" "), _c('v-list', [_c('v-subheader', [_vm._v("Where have we been")]), _vm._v(" "), _c('route-timeline', {
+    attrs: {
+      "scope": "props"
+    },
+    scopedSlots: _vm._u([{
+      key: "item",
+      fn: function(props) {
+        return [_c('v-list-tile', {
+          attrs: {
+            "to": props.route
+          }
+        }, [_c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("\n                                    " + _vm._s(props.title) + "\n                                ")]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v("\n                                    " + _vm._s(_vm._f("timelineDate")(props.created)) + "\n                                    -\n                                    " + _vm._s(props.subtitle) + "\n                                ")])], 1)], 1)]
+      }
+    }])
+  })], 1)], 1)], 1)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('p', [_vm._v("As we can see, i use "), _c('a', {
+    attrs: {
+      "href": "https://vuetifyjs.com/"
+    }
+  }, [_vm._v("vuetifyjs")]), _vm._v(" for styling. So the base timeline does not look cool. I want to add it in a "), _c('a', {
+    attrs: {
+      "href": "https://vuetifyjs.com/components/lists"
+    }
+  }, [_vm._v("list")]), _vm._v(", that looks cool i think.")])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('code', {
+    staticClass: "block"
+  }, [_c('pre', {
+    pre: true
+  }, [_vm._v("<route-timeline scope=\"props\">\n    <template slot=\"item\" scope=\"props\">\n        <v-list-tile to=\"props.route\">\n            <v-list-tile-content>\n                <v-list-tile-title>\n                    {{ props.title }}\n                </v-list-tile-title>\n                <v-list-tile-sub-title>\n                    {{ props.created | timelineDate }}\n                    -\n                    {{ props.subtitle }}\n                </v-list-tile-sub-title>\n            </v-list-tile-content>\n        </v-list-tile>\n    </template>\n</route-timeline>")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('code', {
+    staticClass: "block"
+  }, [_c('pre', {
+    pre: true
+  }, [_vm._v("<v-card>\n    <v-toolbar class=\"cyan\" dark>\n        <v-toolbar-title>Timeline</v-toolbar-title>\n    </v-toolbar>\n    <v-list>\n        <v-subheader>Where have we been</v-subheader>\n        <route-timeline scope=\"props\">\n            <template slot=\"item\" scope=\"props\">\n                <v-list-tile :to=\"props.route\">\n                    <v-list-tile-content>\n                        <v-list-tile-title>\n                            {{ props.title }}\n                        </v-list-tile-title>\n                        <v-list-tile-sub-title>\n                            {{ props.created | timelineDate }}\n                            -\n                            {{ props.subtitle }}\n                        </v-list-tile-sub-title>\n                    </v-list-tile-content>\n                </v-list-tile>\n            </template>\n        </route-timeline>\n    </v-list>\n</v-card>")])])
+}]}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('nav', [_c('br'), _vm._v(" "), _c('v-list', [_c('v-subheader', [_c('h4', {
     staticClass: "white--text"
   }, [_vm._v("Menu")])]), _vm._v(" "), _vm._l((_vm.routes), function(route) {
     return _c('v-list-tile', {
@@ -683,12 +870,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       attrs: {
         "to": route
       }
-    }, [_c('v-list-tile-action', [_c('v-icon', [_vm._v(_vm._s(route.icon))])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("\n                    " + _vm._s(route.title) + "\n                ")])], 1)], 1)
+    }, [_c('v-list-tile-action', [_c('v-icon', {
+      attrs: {
+        "fa": ""
+      }
+    }, [_vm._v(_vm._s(route.icon))])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v(_vm._s(route.title))]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v(_vm._s(route.subtitle))])], 1)], 1)
   })], 2)], 1)
 },staticRenderFns: []}
 
 /***/ }),
-/* 61 */
+/* 65 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -726,7 +917,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           attrs: {
             "to": props.route
           }
-        }, [_c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("\n                                " + _vm._s(props.title) + "\n                            ")]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v("\n                                " + _vm._s(props.subtitle) + "\n                            ")])], 1)], 1)]
+        }, [_c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("\n                                " + _vm._s(props.title) + "\n                            ")]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v("\n                                " + _vm._s(_vm._f("timelineDate")(props.created)) + "\n                                -\n                                " + _vm._s(props.subtitle) + "\n                            ")])], 1)], 1)]
       }
     }])
   })], 1)], 1)], 1)
@@ -747,7 +938,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 }]}
 
 /***/ }),
-/* 62 */
+/* 66 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -755,11 +946,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "container"
-  }, [_c('h2', [_vm._v("Documentation")])])
+  }, [_c('h2', [_vm._v("Documentation")]), _vm._v(" "), _c('p', [_vm._v("Location for more documentation, when needed")])])
 }]}
 
 /***/ }),
-/* 63 */
+/* 67 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -789,23 +980,38 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         _vm.drawer = !_vm.drawer
       }
     }
-  }), _vm._v(" "), _c('v-toolbar-title', [_vm._v("Vue route timeline")])], 1), _vm._v(" "), _c('main', [_c('v-container', [_c('router-view')], 1)], 1), _vm._v(" "), _c('v-footer')], 1)
+  }), _vm._v(" "), _c('v-toolbar-title', [_vm._v("Vue route timeline")]), _vm._v(" "), _c('v-spacer'), _vm._v(" "), _c('v-btn', {
+    attrs: {
+      "icon": "",
+      "href": "https://github.com/disjfa/vue-route-timeline"
+    }
+  }, [_c('v-icon', {
+    attrs: {
+      "fa": ""
+    }
+  }, [_vm._v("github")])], 1)], 1), _vm._v(" "), _c('main', [_c('v-container', [_c('router-view')], 1)], 1), _vm._v(" "), _c('v-footer')], 1)
 },staticRenderFns: []}
 
 /***/ }),
-/* 64 */
+/* 68 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
-    staticClass: "route-timeline"
+    staticClass: "timeline"
   }, [_vm._l((_vm.items), function(item) {
     return _vm._t("item", [_c('router-link', {
-      staticClass: "route-timeline-item",
+      staticClass: "timeline-item",
       attrs: {
         "to": item.route
       }
-    }, [_c('h4', [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('h5', [_vm._v(_vm._s(item.subtitle))]), _vm._v("\n            " + _vm._s(item.created) + "\n        ")])], {
+    }, [_c('h5', {
+      staticClass: "timeline-title"
+    }, [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('div', {
+      staticClass: "timeline-title"
+    }, [_vm._v(_vm._s(item.subtitle))]), _vm._v(" "), _c('div', {
+      staticClass: "timeline-date"
+    }, [_vm._v(_vm._s(_vm._f("timelineDate")(item.created)))])])], {
       title: item.title,
       subtitle: item.subtitle,
       created: item.created,
@@ -815,15 +1021,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },staticRenderFns: []}
 
 /***/ }),
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RouteTimeline_vue__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RouteTimeline_vue__ = __webpack_require__(61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RouteTimeline_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__RouteTimeline_vue__);
 
 
@@ -833,7 +1039,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 
 /***/ }),
-/* 70 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -855,7 +1061,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 
 /***/ }),
-/* 71 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -866,7 +1072,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 
 /***/ }),
-/* 72 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -876,19 +1082,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /* harmony default export */ __webpack_exports__["a"] = ({
   timelineItemIsAdded(state, payload) {
     const { items } = state;
-    items.push(payload.timeline);
-    __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].set(state, 'items', items);
+    items.unshift(payload.timeline);
+    __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].set(state, 'items', items.slice(0, 25));
   },
 });
 
 
 /***/ }),
-/* 73 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components__ = __webpack_require__(73);
 
 
 
@@ -899,6 +1105,12 @@ timelinePlugin.install = function install(Vue, store, router, moduleName = 'time
 
   Object.keys(__WEBPACK_IMPORTED_MODULE_1__components__["a" /* default */]).forEach((key) => {
     Vue.component(`${key}`, __WEBPACK_IMPORTED_MODULE_1__components__["a" /* default */][key]);
+  });
+
+  Vue.filter('timelineDate', function(value) {
+    if (value) {
+      return value.toLocaleString();
+    }
   });
 
   const setRoute = (title, subtitle = '') => {
@@ -918,5 +1130,5 @@ timelinePlugin.install = function install(Vue, store, router, moduleName = 'time
 
 
 /***/ })
-],[17]);
-//# sourceMappingURL=app.e659c3795ae529ee95ad.js.map
+],[16]);
+//# sourceMappingURL=app.b3bcec08d2871e5692f5.js.map
