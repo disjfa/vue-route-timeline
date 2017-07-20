@@ -787,7 +787,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('code', {
     staticClass: "block"
-  }, [_c('pre', [_vm._v("import Vue from 'vue'; // Load vue\nimport App from './App.vue'; // Load your app\nimport router from './router'; // Add your router\nimport store from './store'; // Build your vuex store\nimport timeline from 'vue-route-timeline'; // Import timeline\n\nVue.use(timeline.plugin, store, router); // Connect timeline to vue, store and router\n\nnew Vue({\n  el: '#app',\n  router,\n  store,\n  render: h => h(App),\n});")])])
+  }, [_c('pre', [_vm._v("import Vue from 'vue'; // Load vue\nimport timeline from 'vue-route-timeline'; // Import timeline\nimport App from './App.vue'; // Load your app\nimport router from './router'; // Add your router\nimport store from './store'; // Build your vuex store\n\nVue.use(timeline.plugin, store, router); // Connect timeline to vue, store and router\n\nnew Vue({\n  el: '#app',\n  router,\n  store,\n  render: h => h(App),\n});")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('code', {
     staticClass: "block"
@@ -1131,4 +1131,4 @@ timelinePlugin.install = function install(Vue, store, router, moduleName = 'time
 
 /***/ })
 ],[16]);
-//# sourceMappingURL=app.b3bcec08d2871e5692f5.js.map
+//# sourceMappingURL=app.0fab860a20759e8a4af1.js.map
