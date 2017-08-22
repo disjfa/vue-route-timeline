@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "Vue route timeline",
+  "description": "Build a timeline clicking throug your application, using vue-router and vuex.",
+  "icons": {
+    "60": "/static/icons/firefox_app_60x60.png",
+    "128": "/static/icons/firefox_app_128x128.png",
+    "512": "/static/icons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "disjfa",
+    "url": "https://github.com/disjfa/vue-route-timeline"
+  }
+}

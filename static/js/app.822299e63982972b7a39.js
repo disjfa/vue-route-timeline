@@ -275,6 +275,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'navbar',
@@ -417,6 +425,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -878,20 +892,39 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('nav', [_c('br'), _vm._v(" "), _c('v-list', [_c('v-subheader', [_c('h4', {
-    staticClass: "white--text"
-  }, [_vm._v("Menu")])]), _vm._v(" "), _vm._l((_vm.routes), function(route) {
+  return _c('nav', [_c('v-list', {
+    attrs: {
+      "three-line": ""
+    }
+  }, [_c('v-list-tile', {
+    attrs: {
+      "avatar": "",
+      "ripple": "",
+      "to": {
+        name: 'hello'
+      }
+    }
+  }, [_c('v-list-tile-avatar', [_c('img', {
+    staticStyle: {
+      "border-radius": "0"
+    },
+    attrs: {
+      "src": "static/logo.png",
+      "alt": ""
+    }
+  })]), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("Vue route timeline")]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v("Route your timeline in your application")])], 1)], 1)], 1), _vm._v(" "), _c('v-divider'), _vm._v(" "), _c('v-list', _vm._l((_vm.routes), function(route) {
     return _c('v-list-tile', {
       key: route.name,
       attrs: {
-        "to": route
+        "to": route,
+        "ripple": ""
       }
     }, [_c('v-list-tile-action', [_c('v-icon', {
       attrs: {
         "fa": ""
       }
     }, [_vm._v(_vm._s(route.icon))])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v(_vm._s(route.title))]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v(_vm._s(route.subtitle))])], 1)], 1)
-  })], 2)], 1)
+  }))], 1)
 },staticRenderFns: []}
 
 /***/ }),
@@ -911,9 +944,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
+  return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "container"
-  }, [_c('h2', [_vm._v("Vue route timeline")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('p', [_vm._v("So i did.")]), _vm._v(" "), _c('p', [_vm._v("If you like to know what it does, please click through the site an everywhere i placed the timeline you can see it grow. I log the clicks on the routes and the route timeline grows. You can easily click back to any of the routes.")]), _vm._v(" "), _c('p', [_vm._v("Try clicking on the get started button and click back here to see, it's awesome.")]), _vm._v(" "), _c('div', [_c('v-btn', {
+  }, [_c('h2', [_vm._v("Vue route timeline")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('p', [_vm._v("So i did.")]), _vm._v(" "), _c('p', [_vm._v("If you like to know what it does, please click through the site an everywhere i placed the timeline you can see it grow. I log the clicks on the routes and the route timeline grows. You can easily click back to any of the routes.")]), _vm._v(" "), _c('p', [_vm._v("Try clicking on the get started button and click back here to see, it's awesome.")]), _vm._v(" "), _c('div', [_c('v-btn', {
     attrs: {
       "primary": "",
       "dark": "",
@@ -945,11 +978,24 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
           attrs: {
             "to": props.route
           }
-        }, [_c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("\n                                " + _vm._s(props.title) + "\n                            ")]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v("\n                                " + _vm._s(_vm._f("timelineDate")(props.created)) + "\n                                -\n                                " + _vm._s(props.subtitle) + "\n                            ")])], 1)], 1)]
+        }, [_c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v("\n                                    " + _vm._s(props.title) + "\n                                ")]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v("\n                                    " + _vm._s(_vm._f("timelineDate")(props.created)) + "\n                                    -\n                                    " + _vm._s(props.subtitle) + "\n                                ")])], 1)], 1)]
       }
     }])
-  })], 1)], 1)], 1)
+  })], 1)], 1)], 1)])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "text-center"
+  }, [_c('img', {
+    staticStyle: {
+      "max-width": "200px",
+      "height": "auto"
+    },
+    attrs: {
+      "src": "static/logo.png",
+      "alt": ""
+    }
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('p', [_vm._v("Why are we building a timeline, i heard about a timeline feature on the internet and got excited. That project did't come together so i wanted to make something using "), _c('a', {
     attrs: {
       "href": "https://vuejs.org/"
@@ -985,7 +1031,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "drawer"
     }
   }, [_c('navbar')], 1), _vm._v(" "), _c('v-toolbar', {
-    staticClass: "primary",
+    staticClass: "purple",
     attrs: {
       "dark": ""
     }
@@ -1146,4 +1192,4 @@ timelinePlugin.install = function install(Vue, store, router, moduleName = 'time
 
 /***/ })
 ],[18]);
-//# sourceMappingURL=app.5ac8f80d28ff23f52640.js.map
+//# sourceMappingURL=app.822299e63982972b7a39.js.map
