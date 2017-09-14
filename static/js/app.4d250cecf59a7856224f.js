@@ -57,28 +57,28 @@ var routes = [{
   name: 'hello',
   title: 'Hello',
   subtitle: 'Vue route timeline',
-  icon: 'home',
+  icon: 'fa-home',
   component: __WEBPACK_IMPORTED_MODULE_1__views_Hello___default.a
 }, {
-  path: '/instalation',
-  name: 'instalation',
+  path: '/installation',
+  name: 'installation',
   title: 'Get started',
   subtitle: 'Lets do this',
-  icon: 'map-signs',
+  icon: 'fa-map-signs',
   component: __WEBPACK_IMPORTED_MODULE_2__views_Instalation___default.a
 }, {
   path: '/customize',
   name: 'customize',
   title: 'Customize',
   subtitle: 'Lets change this',
-  icon: 'pencil',
+  icon: 'fa-pencil',
   component: __WEBPACK_IMPORTED_MODULE_4__views_Customize___default.a
 }, {
   path: '/docs',
   name: 'docs',
   title: 'Documentation',
   subtitle: 'Check it out',
-  icon: 'code',
+  icon: 'fa-code',
   component: __WEBPACK_IMPORTED_MODULE_3__views_Docs___default.a
 }, {
   path: '*',
@@ -188,7 +188,10 @@ __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODU
     }
   }
 });
-__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_7__src__["a" /* default */].plugin, __WEBPACK_IMPORTED_MODULE_6__store__["a" /* default */], __WEBPACK_IMPORTED_MODULE_5__router__["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_7__src__["a" /* default */].plugin, {
+  store: __WEBPACK_IMPORTED_MODULE_6__store__["a" /* default */],
+  router: __WEBPACK_IMPORTED_MODULE_5__router__["a" /* default */]
+});
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_1_vuetify___default.a);
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_2_vue_router__["a" /* default */]);
 
@@ -471,6 +474,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'hello',
@@ -553,6 +560,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'instalation',
@@ -567,6 +581,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -807,6 +822,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_vm._v("Add a timeline in your code")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('br'), _vm._v(" "), _c('h4', {
     attrs: {
+      "id": "css"
+    }
+  }, [_vm._v("Add some css")]), _vm._v(" "), _c('p', [_vm._v("I also have a small scss file in the style folder, you can include this.")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('h4', {
+    attrs: {
       "id": "result"
     }
   }, [_vm._v("The result is a timeline")]), _vm._v(" "), _c('route-timeline')], 1)
@@ -817,7 +836,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('code', {
     staticClass: "block"
-  }, [_c('pre', [_vm._v("import Vue from 'vue'; // Load vue\nimport timeline from 'vue-route-timeline'; // Import timeline\nimport App from './App.vue'; // Load your app\nimport router from './router'; // Add your router\nimport store from './store'; // Build your vuex store\n\nVue.use(timeline.plugin, store, router); // Connect timeline to vue, store and router\n\nnew Vue({\n  el: '#app',\n  router,\n  store,\n  render: h => h(App),\n});")])])
+  }, [_c('pre', [_vm._v("import Vue from 'vue'; // Load vue\nimport timeline from 'vue-route-timeline'; // Import timeline\nimport App from './App.vue'; // Load your app\nimport router from './router'; // Add your router\nimport store from './store'; // Build your vuex store\n\nVue.use(timeline.plugin, {store, router}); // Connect timeline to vue, store and router\n\nnew Vue({\n  el: '#app',\n  router,\n  store,\n  render: h => h(App),\n});")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('code', {
     staticClass: "block"
@@ -834,6 +853,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('code', {
     staticClass: "block"
   }, [_c('pre', [_vm._v("<template>\n    <div class=\"container\">\n        <route-timeline></route-timeline>\n    </div>\n</template>")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('code', {
+    staticClass: "block"
+  }, [_c('pre', [_vm._v("<style>\n    @import 'vue-route-timeline/style/vue-route-timeline.scss';\n</style>")])])
 }]}
 
 /***/ }),
@@ -921,7 +944,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }, [_c('v-list-tile-action', [_c('v-icon', {
       attrs: {
-        "fa": ""
+        "dark": ""
       }
     }, [_vm._v(_vm._s(route.icon))])], 1), _vm._v(" "), _c('v-list-tile-content', [_c('v-list-tile-title', [_vm._v(_vm._s(route.title))]), _vm._v(" "), _c('v-list-tile-sub-title', [_vm._v(_vm._s(route.subtitle))])], 1)], 1)
   }))], 1)
@@ -946,12 +969,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', [_vm._m(0), _vm._v(" "), _c('div', {
     staticClass: "container"
-  }, [_c('h2', [_vm._v("Vue route timeline")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('p', [_vm._v("So i did.")]), _vm._v(" "), _c('p', [_vm._v("If you like to know what it does, please click through the site an everywhere i placed the timeline you can see it grow. I log the clicks on the routes and the route timeline grows. You can easily click back to any of the routes.")]), _vm._v(" "), _c('p', [_vm._v("Try clicking on the get started button and click back here to see, it's awesome.")]), _vm._v(" "), _c('div', [_c('v-btn', {
+  }, [_c('h2', [_vm._v("Vue route timeline")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('p', [_vm._v("So i did.")]), _vm._v(" "), _c('p', [_vm._v("\n            If you like to know what it does, please click through the site an everywhere i placed the timeline you can see it grow. I log the clicks on the routes and the route timeline grows. You can easily click back to any of the routes.")]), _vm._v(" "), _c('p', [_vm._v("Try clicking on the get started button and click back here to see, it's awesome.")]), _vm._v(" "), _c('div', [_c('v-btn', {
     attrs: {
       "primary": "",
       "dark": "",
       "to": {
-        name: 'instalation'
+        name: 'installation'
       }
     }
   }, [_vm._v("Get started")]), _vm._v(" "), _c('v-btn', {
@@ -996,7 +1019,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('p', [_vm._v("Why are we building a timeline, i heard about a timeline feature on the internet and got excited. That project did't come together so i wanted to make something using "), _c('a', {
+  return _c('p', [_vm._v("\n            Why are we building a timeline, i heard about a timeline feature on the internet and got excited. That project did't come together so i wanted to make something using "), _c('a', {
     attrs: {
       "href": "https://vuejs.org/"
     }
@@ -1036,7 +1059,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "dark": ""
     }
   }, [_c('v-toolbar-side-icon', {
-    nativeOn: {
+    on: {
       "click": function($event) {
         $event.stopPropagation();
         _vm.drawer = !_vm.drawer
@@ -1047,11 +1070,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "icon": "",
       "href": "https://github.com/disjfa/vue-route-timeline"
     }
-  }, [_c('v-icon', {
-    attrs: {
-      "fa": ""
-    }
-  }, [_vm._v("github")])], 1)], 1), _vm._v(" "), _c('main', [_c('v-container', [_c('router-view')], 1)], 1)], 1)
+  }, [_c('v-icon', [_vm._v("fa-github")])], 1)], 1), _vm._v(" "), _c('main', [_c('v-container', [_c('router-view')], 1)], 1)], 1)
 },staticRenderFns: []}
 
 /***/ }),
@@ -1070,7 +1089,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('h5', {
       staticClass: "timeline-title"
     }, [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('div', {
-      staticClass: "timeline-title"
+      staticClass: "timeline-subtitle"
     }, [_vm._v(_vm._s(item.subtitle))]), _vm._v(" "), _c('div', {
       staticClass: "timeline-date"
     }, [_vm._v(_vm._s(_vm._f("timelineDate")(item.created)))])])], {
@@ -1090,12 +1109,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RouteTimeline_vue__ = __webpack_require__(63);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RouteTimeline_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__RouteTimeline_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RouteTimeline__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__RouteTimeline___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__RouteTimeline__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  RouteTimeline: __WEBPACK_IMPORTED_MODULE_0__RouteTimeline_vue___default.a,
+  RouteTimeline: __WEBPACK_IMPORTED_MODULE_0__RouteTimeline___default.a,
 });
 
 
@@ -1161,17 +1180,19 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 const timelinePlugin = {};
 
-timelinePlugin.install = function install(Vue, store, router, moduleName = 'timeline') {
+timelinePlugin.install = function install(Vue, options, moduleName = 'timeline') {
+  const { store, router } = options;
   store.registerModule(moduleName, __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */]);
 
   Object.keys(__WEBPACK_IMPORTED_MODULE_1__components__["a" /* default */]).forEach((key) => {
     Vue.component(`${key}`, __WEBPACK_IMPORTED_MODULE_1__components__["a" /* default */][key]);
   });
 
-  Vue.filter('timelineDate', function(value) {
+  Vue.filter('timelineDate', (value) => {
     if (value) {
       return value.toLocaleString();
     }
+    return '';
   });
 
   const setRoute = (title, subtitle = '') => {
@@ -1192,4 +1213,4 @@ timelinePlugin.install = function install(Vue, store, router, moduleName = 'time
 
 /***/ })
 ],[18]);
-//# sourceMappingURL=app.822299e63982972b7a39.js.map
+//# sourceMappingURL=app.4d250cecf59a7856224f.js.map
