@@ -1,3 +1,4 @@
+import Vue from 'vue';
 import timelineStore from './store';
 import Components from './components';
 
@@ -29,4 +30,10 @@ function install(Vue, options, moduleName = 'timeline') {
   };
 }
 
+if (typeof window !== undefined
+  && window.Vue
+  && window.Vue === Vue
+) {
+  install(window.Vue)
+}
 export default install;
