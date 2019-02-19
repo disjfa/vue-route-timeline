@@ -1,32 +1,55 @@
 {
-  "name": "vue-plugin",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
-  },
-  "dependencies": {
-    "vue": "^2.5.22",
-    "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-plugin-unit-jest": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
-    "@vue/eslint-config-airbnb": "^4.0.0",
-    "@vue/test-utils": "^1.0.0-beta.20",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "^23.6.0",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.5.21"
-  }
+    "name": "vue-route-timeline",
+    "version": "0.2.0",
+    "description": "A Vue timeline, using vue-router and vuex",
+    "author": "disjfa <disjfa@disjfa.nl>",
+    "license": "MIT",
+    "scripts": {
+        "serve": "vue-cli-service serve ./demo/main",
+        "build:demo": "vue-cli-service build ./demo/main",
+        "build": "vue-cli-service build --target lib --name VueRouteTimeline src/index.js",
+        "lint": "vue-cli-service lint",
+        "test:unit": "vue-cli-service test:unit"
+    },
+    "peerDependencies": {
+        "vue": "^2.5.22",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.4.0",
+        "@vue/cli-plugin-eslint": "^3.4.0",
+        "@vue/cli-plugin-unit-jest": "^3.4.0",
+        "@vue/cli-service": "^3.4.0",
+        "@vue/eslint-config-airbnb": "^4.0.0",
+        "@vue/test-utils": "^1.0.0-beta.20",
+        "babel-core": "7.0.0-bridge.0",
+        "babel-eslint": "^10.0.1",
+        "babel-jest": "^23.6.0",
+        "eslint": "^5.8.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "node-sass": "^4.9.0",
+        "sass-loader": "^7.1.0",
+        "stylus": "^0.54.5",
+        "stylus-loader": "^3.0.2",
+        "vue": "^2.6.6",
+        "vue-analytics": "^5.16.2",
+        "vue-router": "^3.0.2",
+        "vue-template-compiler": "^2.5.21",
+        "vuetify": "^1.5.2",
+        "vuex": "^3.1.0"
+    },
+    "sideEffects": false,
+    "main": "dist/VueRouteTimeline.umd.js",
+    "browser": "dist/VueRouteTimeline.common.js",
+    "unpkg": "dist/VueRouteTimeline.umd.min.js",
+    "jsDelivr": "dist/VueRouteTimeline.umd.min.js",
+    "files": [
+        "dist",
+        "scss",
+        "src"
+    ],
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.7.2"
+    }
 }
