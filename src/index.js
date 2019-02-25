@@ -30,10 +30,10 @@ function install(Vue, options, moduleName = 'timeline') {
   };
 }
 
-if (typeof window !== undefined
+if (typeof window !== 'undefined'
   && window.Vue
   && window.Vue === Vue
 ) {
-  install(window.Vue)
+  install(window.Vue);
 }
 export default install;

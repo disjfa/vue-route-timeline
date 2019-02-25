@@ -37,7 +37,7 @@ export default {
 
 <style lang="stylus">
   @import '../node_modules/vuetify/src/stylus/main';
-  @import '../src/style/vue-route-timeline.scss';
+  @import '../scss/vue-route-timeline.scss';
 
   code.block {
     display: block;
